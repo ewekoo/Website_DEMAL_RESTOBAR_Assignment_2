@@ -1,0 +1,121 @@
+<!-- Author: Salimov Yeskendir -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Salimov Yeskendir">
+    <meta name="description" content="Информация о ресторане Demal в Астане">
+    <title>Demal — ресторан в Астане</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/salimov-yeskendir.css">
+    <!-- Internal style intentionally overrides the external letter-spacing for the site name. -->
+<style>
+    .site-name {
+        letter-spacing: 2px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <p class="site-name">Demal Resto Bar</p>
+
+    <!-- Navigation links are grouped in a list to keep all page links organized. -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1 class="page-title">Ресторан Demal в Астане</h1>
+
+    <section class="restaurant-info">
+    <h2>О ресторане</h2>
+
+    <p class="restaurant-description">
+        <img class="float-food-image"
+             src="images/demal-logo.jpg"
+             alt="Логотип ресторана Demal">
+
+        Demal — ресторан в Астане. Здесь посетители могут ознакомиться с меню,
+        выбрать блюда и узнать актуальные цены. На этом сайте представлена
+        информация о ресторане, фотографии заведения, меню и контактные данные.
+        Посетители также могут посмотреть график работы и ознакомиться с формой
+        заявки на бронирование столика. Сайт создан для того, чтобы упростить
+        поиск основной информации о Demal и помочь гостям подготовиться к
+        посещению ресторана.
+    </p>
+</section>
+
+    <!-- The id identifies the unique gallery section for direct page navigation. -->
+    <section class="restaurant-gallery" id="gallery">
+        <h2>Фотографии ресторана</h2>
+
+        <!-- Each figure groups an image with its caption so visitors can identify the photo. -->
+
+        <figure class="photo-card featured-photo">
+    <!-- Inline style intentionally overrides the external badge padding for this unique label. -->
+        <span class="photo-badge" style="padding: 8px 14px;">Demal</span>
+            <img src="images/demal-exterior.jpg"
+                 alt="Внешний вид ресторана Demal в Астане">
+            <figcaption>Внешний вид ресторана Demal.</figcaption>
+        </figure>
+
+        <figure class="photo-card">
+            <img src="images/demal-interior.jpg"
+                 alt="Интерьер ресторана Demal">
+            <figcaption>Интерьер ресторана Demal.</figcaption>
+        </figure>
+
+        <figure class="photo-card">
+            <img src="images/demal-food.jpg"
+                 alt="Блюдо из меню ресторана Demal">
+            <figcaption>Блюдо из меню ресторана Demal.</figcaption>
+        </figure>
+    </section>
+
+    <!-- The id identifies the unique visitor review section for direct navigation. -->
+    <section class="visitor-review" id="review">
+        <h2>Отзыв посетителя</h2>
+
+        <blockquote>
+            «Мне понравилась атмосфера ресторана и качество блюд.»
+        </blockquote>
+
+        <p>— Али, 5 октября 2026 года</p>
+    </section>
+
+</main>
+
+<footer>
+
+    <h2>Часы работы</h2>
+
+    <ul class="opening-hours">
+        <li>Понедельник — четверг: 13:00–01:00</li>
+        <li>Пятница — суббота: 14:00–02:00</li>
+        <li>Воскресенье: 13:00–01:00</li>
+    </ul>
+
+    <h2>Контакты</h2>
+
+    <address>
+        РестоБар Demal<br>
+        ул. Сексек Ата, 19, Астана<br>
+        Телефон:
+        <a href="tel:+77088263544">+7 (708) 826-35-44</a>
+    </address>
+
+    <p>&copy; 2026 Demal RestoBar</p>
+
+</footer>
+<!-- Fixed contact button stays visible while the visitor scrolls the page. -->
+<a class="fixed-contact" href="tel:+77088263544">Позвонить в Demal</a>
+</body>
+</html>

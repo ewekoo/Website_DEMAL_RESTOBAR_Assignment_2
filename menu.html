@@ -1,0 +1,235 @@
+<!-- Author: Salimov Yeskendir -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Salimov Yeskendir">
+    <meta name="description" content="Меню ресторана Demal в Астане">
+    <title>Меню — Demal Restaurant</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/salimov-yeskendir.css">
+</head>
+
+<body>
+
+<header>
+    <p class="site-name">Demal Resto Bar</p>
+
+    <!-- Navigation links are grouped in a list to organize movement between pages. -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="menu.html">Меню</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1 class="page-title">Меню ресторана Demal</h1>
+
+    <p class="menu-description">
+        Здесь представлено меню ресторана Demal в Астане.
+    </p>
+
+    <!-- Таблица помогает посетителям сравнить блюда и их цены. -->
+    <!-- The id identifies the unique menu table on this page. -->
+    <table class="menu-table" id="menu-table">
+
+        <caption>Лагманы в меню ресторана Demal</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Название блюда</th>
+                <th scope="col">Цена (₸)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Гуйру лагман</td>
+                <td>1790</td>
+            </tr>
+
+            <tr>
+                <td>Суйру лагман</td>
+                <td>1790</td>
+            </tr>
+
+            <tr>
+                <td>Цомян лагман</td>
+                <td>1790</td>
+            </tr>
+
+            <tr>
+                <td>Магру лагман</td>
+                <td>2090</td>
+            </tr>
+
+            <tr>
+                <td>Мошуру лагман</td>
+                <td>2390</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <section class="booking-section">
+
+        <h2>Заявка на бронирование</h2>
+
+        <p class="booking-description">
+            Заполните форму, чтобы указать пожелания по бронированию столика.
+        </p>
+
+        <!-- The id identifies the unique booking form on this page. -->
+        <form action="#" method="post" id="booking-form">
+            <fieldset class="form-group">
+                <legend>Контактные данные</legend>
+ы
+                <label for="customer-name">Ваше имя:</label>
+                <input type="text"
+                       id="customer-name"
+                       name="customer-name"
+                       placeholder="Введите имя"
+                       required>
+
+                <br><br>
+
+                <label for="customer-email">Электронная почта:</label>
+                <input type="email"
+                       id="customer-email"
+                       name="customer-email"
+                       placeholder="name@example.com"
+                       required>
+
+                <br><br>
+
+                <label for="customer-phone">Телефон:</label>
+                <input type="tel"
+                       id="customer-phone"
+                       name="customer-phone"
+                       placeholder="+7 700 000 00 00"
+                       required>
+
+            </fieldset>
+ <!-- Grid organizes the booking details into a clear two-column layout. -->
+    <section class="booking-grid">
+        <article>
+            <h3>Дата бронирования</h3>
+            <p>Выберите удобную дату в форме ниже.</p>
+        </article>
+
+        <article>
+            <h3>Количество гостей</h3>
+            <p>Можно указать от 1 до 20 гостей.</p>
+        </article>
+
+        <article>
+            <h3>Время посещения</h3>
+            <p>Выберите дневное или вечернее время.</p>
+        </article>
+    </section>
+            <fieldset class="form-group">
+                <legend>Детали бронирования</legend>
+
+                <label for="booking-date">Дата:</label>
+                <input type="date"
+                       id="booking-date"
+                       name="booking-date"
+                       required>
+
+                <br><br>
+
+                <label for="guest-count">Количество гостей:</label>
+                <input type="number"
+                       id="guest-count"
+                       name="guest-count"
+                       min="1"
+                       max="20"
+                       placeholder="Например, 4"
+                       required>
+
+                <p>Предпочтительное время:</p>
+
+                <input type="radio"
+                       id="lunch"
+                       name="booking-time"
+                       value="day"
+                       required>
+
+                <label for="lunch">Днём</label>
+
+                <input type="radio"
+                       id="evening"
+                       name="booking-time"
+                       value="evening">
+
+                <label for="evening">Вечером</label>
+
+                <br><br>
+
+                <label for="occasion">Повод:</label>
+
+                <select id="occasion" name="occasion">
+                    <option value="">Выберите повод</option>
+                    <option value="family">Семейный ужин</option>
+                    <option value="birthday">День рождения</option>
+                    <option value="friends">Встреча с друзьями</option>
+                    <option value="other">Другое</option>
+                </select>
+
+                <br><br>
+
+                <label for="comments">Дополнительные пожелания:</label>
+
+                <br>
+
+                <textarea id="comments"
+                          name="comments"
+                          rows="4"
+                          placeholder="Напишите ваши пожелания"></textarea>
+
+                <br><br>
+
+                <input type="checkbox"
+                       id="confirm"
+                       name="confirm"
+                       required>
+
+                <label for="confirm">
+                    Подтверждаю правильность введённых данных
+                </label>
+
+            </fieldset>
+
+            <!-- div используется для группировки кнопок формы, так как отдельный semantic-тег для этой группы не подходит. -->
+            <div>
+                <button type="submit">Отправить заявку</button>
+                <button type="reset">Очистить форму</button>
+            </div>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <h2>Контакты</h2>
+
+    <address>
+        РестоБар Demal<br>
+        ул. Сексек Ата, 19, Астана<br>
+        Телефон:
+        <a href="tel:+77088263544">+7 (708) 826-35-44</a>
+    </address>
+
+    <p>&copy; 2026 Demal RestoBar</p>
+
+</footer>
+
+</body>
+</html>
